@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* Header */
+ 
+header {
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    background-color: darkslategray;
+    line-height: 2.5;
+    display: flex;
+}
+
+h1 {
+    margin: 0rem;
+    color:  #fff;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+  /* Main */
+h2 {
+    color: darkslategray;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+main {
+    text-align: center;
+}
+
+main p {
+    color: darkgrey;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+    color: rgb(189, 189, 189);
+}
+
+body {
+    margin: 0;
+}
+
+/* lines */
+
+main::after {
+    content: "";
+    display: inline-block;
+    width: 95%;
+    height: 6px;
+    background: rgb(15, 94, 60);
+    margin: 0 auto;
+}
+
+.contact::after, .contact::before {
+    content: "";
+    display: inline-block;
+    width: 95%;
+    height: 2px;
+    background: rgb(15, 94, 60);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+  /* Form */
+
+  button {
+    font-size: 1.5em;
+    color: #fff;
+    background-color: rgb(0, 176, 118);
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+ textarea, #state, input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+}
+
+
+  input,
+    select,
+    textarea,
+    #state {
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: rgb(237, 237, 237);
+        color: black;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        outline: none;
+        margin: 8px 0px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border: 1px solid #229569;
+    }
+
+    p, label {
+        color: grey;
+    }
+
+
+    #zip {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      fieldset {
+        border: none;
+    }
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.light {
+    margin-left: 8px;
+}
+
+/* Media Queries */
+
+@media (min-width: 769px) {
+
+    form, main, footer {
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+
+    header {
+        width: 100%;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+     label {
+        width: 60%;
+      }
+
+
+    #zip {
+        width: 30%;
+    }
+
+}
