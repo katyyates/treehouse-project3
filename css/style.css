@@ -112,13 +112,6 @@ main::after {
         color: grey;
     }
 
-
-    #zip {
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-      }
-
       fieldset {
         border: none;
     }
@@ -133,13 +126,22 @@ main::after {
     margin-left: 8px;
 }
 
+
+#zip {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    width: 50%;
+  }
+
+
 /* Media Queries */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
     form, main, footer {
-        margin-left: 15rem;
-        margin-right: 15rem;
+        width: 80%;
+        margin-inline: auto;
     }
 
 
@@ -150,7 +152,11 @@ main::after {
     .form-group {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
     }
+
+
 
      label {
         width: 60%;
@@ -158,7 +164,7 @@ main::after {
 
 
     #zip {
-        width: 30%;
+        margin-right: 31%;
     }
 
 }
