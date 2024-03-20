@@ -159,12 +159,15 @@ main::after {
 
 
      label {
-        width: 60%;
+        width: 20%;
       }
 
+      #state, #name, #email, #phone, #streetaddress, #city {
+        width: 80%;
+      }
 
     #zip {
-        margin-right: 31%;
+        width: 20%;
     }
 
 }
